@@ -1,1 +1,1 @@
-	puts "Hello fucking world!!! \nGoodBye fucking world!!!"
+puts "Hello fucking world!!! \nGoodBye fucking world!!!"
