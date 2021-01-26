@@ -1,0 +1,1 @@
+	puts "Hello fucking world!!! \nGoodBye fucking world!!!"
