@@ -16,8 +16,7 @@ choise2 = gets.chomp
 if (choise1 == "1" and choise2 == "2") or (choise1 == "2" and choise2 == "1")
 	time_spent = time_spent + 2
 	if time_spent >= max_time_spent
-		abort
-		puts "Your lose!"
+		abort "Your lose!"
 	puts "Who would be return?"
 	choise3 = gets.chomp
 	if choise3 == "1"
