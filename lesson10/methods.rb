@@ -16,5 +16,9 @@ def get_user_input
 		letter = STDIN.gets.chomp
 	end
 
-	return letter	
+	return letter
+end
+
+def check_result(user_input, letters, good_letters, bad_letters)
+	
 end
