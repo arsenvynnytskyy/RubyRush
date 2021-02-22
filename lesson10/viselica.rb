@@ -1,8 +1,10 @@
 require "./methods.rb"
 
+cls
+
 puts "Game Viselica, v.1.0"
 
-letters = get_letters #todo
+letters = get_letters
 
 errors = 0
 
@@ -14,9 +16,9 @@ while errors < 7 do
 	
 	puts "Insert the next letter..."
 
-	user_input = get_user_input #todo
+	user_input = get_user_input
 
-	result = check_result(user_input, letters, good_letters, bad_letters) #todo
+	result = check_result(user_input, letters, good_letters, bad_letters)
 
 	if result == -1
 		errors += 1
@@ -25,4 +27,4 @@ while errors < 7 do
 	end
 end
 
-print_status(letters, good_letters, bad_letters. errors)
+print_status(letters, good_letters, bad_letters, errors)
