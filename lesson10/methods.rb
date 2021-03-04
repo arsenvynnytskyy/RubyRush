@@ -6,7 +6,7 @@ def get_letters
 		abort "You dont insert word for game!"
 	end
 
-	return slovo.split("")
+	return slovo.encode('UTF-8').split('')
 end
 
 def get_user_input
@@ -24,11 +24,31 @@ def check_result(user_input, letters, good_letters, bad_letters)
 		return 0
 	end
 
-	if letters.include? user_input
+	if letters.include? user_input ||
+		(user_input == 'е' && letters.include?('ё')) ||
+		(user_input == 'ё' && letters.include?('e')) ||
+		(user_input == 'и' && letters.include?('й')) ||
+		(user_input == 'й' && letters.include?('и'))
+
 		good_letters << user_input
 
-		# умова при якій відгадане усе слово!
-		if letters.uniq.size == good_letters.size
+		if user_input == 'е'
+			good_letters << 'ё'
+		end
+
+		if user_input == 'ё'
+			good_letters << 'е'
+		end
+
+		if user_input == 'и'
+			good_letters << 'й'
+		end
+
+		if user_input == 'й'
+			good_letters << 'и'
+		end
+
+		if (letters - good_letters).empty?
 			return 1
 		else
 			return 0
