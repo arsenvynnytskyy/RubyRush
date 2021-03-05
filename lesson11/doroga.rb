@@ -1,4 +1,4 @@
-require "./bridge.rb"
+require "./bridge"
 
 puts "Go!"
 
@@ -12,8 +12,12 @@ bridge = Bridge.new
 
 sleep 1
 
-bridge.open
+if !bridge.is_opened?
+	bridge.open
+end
 
 sleep 1
 
 puts "Go ahead!"
+
+puts bridge.is_opened?.to_s
