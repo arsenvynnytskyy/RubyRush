@@ -22,6 +22,6 @@ class Bodybuilder
 		puts "Biceps: #{@biceps}"
 		puts "Triceps: #{@triceps}"
 		puts "Delta: #{@delta}"
-		puts ""
+		puts
 	end
 end
