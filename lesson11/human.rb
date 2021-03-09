@@ -5,19 +5,19 @@ class Human
 		@age = age
 	end
 
+	def old?
+		return @age >= 60
+	end
+
 	def full_name
-		if @age <= 60
-			puts @firstname
+		if old?
+			return "#{@firstname} #{@lastname}"
 		else
-			puts @firstname + " " + @lastname
+			return @firstname
 		end
 	end
 
-	def check_age
-		if @age > 60
-			puts "He - #{@age}. Old."
-		else
-			puts "He - #{@age}. Young."
-		end
+	def age
+		return @age
 	end
 end

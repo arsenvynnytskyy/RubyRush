@@ -4,11 +4,11 @@ human1 = Human.new("Гаврила", "Петрович", 61)
 human2 = Human.new("Фёдор", "Петрович", 59)
 human3 = Human.new("Василий", "Алибабаевич", 18)
 
-human1.full_name
-human1.check_age
+puts human1.full_name
+puts "He is #{human1.age} — #{human1.old? ? 'old' : 'young'}"
 
-human2.full_name
-human2.check_age
+puts human2.full_name
+puts "He is #{human2.age} — #{human2.old? ? 'old' : 'young'}"
 
-human3.full_name
-human3.check_age
+puts human3.full_name
+puts "He is #{human3.age} — #{human3.old? ? 'old' : 'young'}"
