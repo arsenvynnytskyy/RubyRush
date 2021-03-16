@@ -14,7 +14,7 @@ questions = [
 results = [
 "looser-idiot",
 "looser-asshole",
-"losser-looser"]
+"looser-looser"]
 
 yes_answers = 0
 
@@ -33,9 +33,9 @@ for item in questions do
 	end
 end
 
-puts "#{name}"
+puts "\n #{name}"
 
-puts "Your's result of test (answers yes - #{yes_answers}):"
+puts "\n Your's result of test (answers yes - #{yes_answers}):"
 
 if yes_answers >= 10
 	puts results[0]

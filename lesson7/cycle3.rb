@@ -12,3 +12,5 @@ for item in new_array do
 end
 
 puts "Summary of items: " + summ.to_s
+puts new_array.inject(0) { |sum,x| sum + x }
+puts new_array.sum

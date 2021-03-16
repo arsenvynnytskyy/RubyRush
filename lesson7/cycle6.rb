@@ -1,4 +1,4 @@
-array1 = [1, 2, 3, 4, 5, 6, 7]
+array1 = [1, 2, 3, 4, 5, 6, 9]
 puts "Start array " + array1.to_s
 
 new_array1 = []

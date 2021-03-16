@@ -1,13 +1,15 @@
-cars = ["1. Toyota", 
-		"2. Subaru", 
-		"3. Nissan", 
-		"4. Suzuki", 
-		"5. Skoda", 
-		"6. Opel", 
-		"7. VAZ", 
-		"8. Mazda", 
-		"9. KIA", 
-		"10. Honda"]
+cars = [
+	"1. Toyota", 
+	"2. Subaru", 
+	"3. Nissan", 
+	"4. Suzuki", 
+	"5. Skoda", 
+	"6. Opel", 
+	"7. VAZ", 
+	"8. Mazda", 
+	"9. KIA", 
+	"10. Honda"
+]
 puts "We have " + cars.size.to_s + " brand cars."
 puts cars
 puts "What number of car you want?"
