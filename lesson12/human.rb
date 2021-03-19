@@ -7,7 +7,7 @@ class Human
 	end
 
 	def old?
-		return @age >= 60
+		@age >= 60
 	end
 
 	def full_name
@@ -19,7 +19,7 @@ class Human
 	end
 
 	def age
-		return @age
+		@age
 	end
 
 	def film=(film)
@@ -27,6 +27,6 @@ class Human
 	end
 
 	def film
-		return @film
+		@film
 	end
 end
