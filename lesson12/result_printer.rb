@@ -10,8 +10,11 @@ class ResultPrinter
 
 		puts "Errors (#{game.errors}): #{game.bad_letters.join(", ")}"
 
+		print_viselitsa(game.errors)
+
 		if game.errors >= 7
 			puts "Your lose! =("
+			puts "Word was a: " + game.letters.join("")
 		else
 			if game.letters.uniq.size == game.good_letters.size
 				puts "Congratulation! You'r won!\n\n"
@@ -32,5 +35,123 @@ class ResultPrinter
 		end
 	end
 		return result
+	end
+
+	def print_viselitsa(errors)
+		case errors
+		when 0
+	      puts '
+	          _______
+	          |/
+	          |
+	          |
+	          |
+	          |
+	          |
+	          |
+	          |
+	        __|________
+	        |         |
+	        '
+	    when 1
+	      puts '
+	        _______
+	        |/
+	        |     ( )
+	        |
+	        |
+	        |
+	        |
+	        |
+	        |
+	      __|________
+	      |         |
+	      '
+	    when 2
+	      puts '
+	        _______
+	        |/
+	        |     ( )
+	        |      |
+	        |
+	        |
+	        |
+	        |
+	        |
+	      __|________
+	      |         |
+	      '
+	    when 3
+	      puts '
+	        _______
+	        |/
+	        |     ( )
+	        |      |_
+	        |        \\
+	        |
+	        |
+	        |
+	        |
+	      __|________
+	      |         |
+	      '
+	    when 4
+	      puts '
+	        _______
+	        |/
+	        |     ( )
+	        |     _|_
+	        |    /   \\
+	        |
+	        |
+	        |
+	        |
+	      __|________
+	      |         |
+	      '
+	    when 5
+	      puts '
+	        _______
+	        |/
+	        |     ( )
+	        |     _|_
+	        |    / | \\
+	        |      |
+	        |
+	        |
+	        |
+	      __|________
+	      |         |
+	      '
+
+	    when 6
+	      puts '
+	        _______
+	        |/
+	        |     ( )
+	        |     _|_
+	        |    / | \\
+	        |      |
+	        |     / \\
+	        |    /   \\
+	        |
+	      __|________
+	      |         |
+	      '
+	    when 7
+	      puts '
+	        _______
+	        |/     |
+	        |     (_)
+	        |     _|_
+	        |    / | \\
+	        |      |
+	        |     / \\
+	        |    /   \\
+	        |
+	      __|________
+	      |         |
+	      '
+		end
 	end
 end
