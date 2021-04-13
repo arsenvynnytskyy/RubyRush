@@ -10,6 +10,9 @@ if File.exist?(file_path_forehead)
 	lines = file.readlines
 	file.close
 	forehead = lines.sample
+else
+	puts "File with forehead not found."
+	abort
 end
 
 if File.exist?(file_path_eyes)
@@ -17,6 +20,9 @@ if File.exist?(file_path_eyes)
 	lines = file.readlines
 	file.close
 	eyes = lines.sample
+else
+	puts "File with eyes not found."
+	abort
 end
 
 if File.exist?(file_path_nose)
@@ -24,6 +30,9 @@ if File.exist?(file_path_nose)
 	lines = file.readlines
 	file.close
 	nose = lines.sample
+else
+	puts "File with nose not found."
+	abort
 end
 
 if File.exist?(file_path_mouth)
@@ -31,6 +40,9 @@ if File.exist?(file_path_mouth)
 	lines = file.readlines
 	file.close
 	mouth = lines.sample
+else
+	puts "File with mouth not found."
+	abort
 end
 
 puts forehead
