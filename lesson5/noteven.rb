@@ -1,6 +1,6 @@
 a=54955
 
-if a%2==0
+if a % 2 == 0
 	puts a
 	puts "Парне число"
 else
