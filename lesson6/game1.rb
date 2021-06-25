@@ -10,7 +10,7 @@ puts ""
 if user_choice >= 0 && user_choice < variants.size.to_i
 	puts "Your choice: " + variants[user_choice].slice(3..-1).to_s
 else
-	puts "Error. Incorrect input value..."
+	abort "Error. Incorrect input value..."
 end
 
 puts ""
@@ -18,7 +18,7 @@ computer_random_choice = rand(3)
 if computer_random_choice >= 0 && computer_random_choice <= variants.size.to_i
 	puts "Computer random choice: " + variants[computer_random_choice].to_s.slice(3..-1)
 else
-	puts "Error. Problem with random computer choice..."
+	abort "Error. Problem with random computer choice..."
 end
 puts ""
 
