@@ -6,4 +6,4 @@ while count <= 5 do
 	sleep 0.5 	
 end
 
-puts "I'll go to search" 
+puts "I'll go to search!" 
